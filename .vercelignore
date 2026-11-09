@@ -1,0 +1,11 @@
+node_modules
+.mongo-data
+video
+reference
+assets/illustrations
+image.png
+client/dist
+client/test-results
+client/playwright-report
+.env
+.env.local

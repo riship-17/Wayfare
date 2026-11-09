@@ -1,0 +1,14 @@
+[
+  { "providerName": "The Myriad Dubai", "title": "The Myriad Dubai student residence", "area": "Area to confirm with the provider",
+    "roomTypes": [{ "type": "shared" }, { "type": "private" }], "billsIncluded": [], "amenities": [], "houseRules": [], "womenOnly": false,
+    "contact": { "website": null, "phone": null } },
+  { "providerName": "KSK Homes", "title": "KSK Homes student accommodation", "area": "Area to confirm with the provider",
+    "roomTypes": [{ "type": "shared" }, { "type": "private" }], "billsIncluded": [], "amenities": [], "houseRules": [], "womenOnly": false,
+    "contact": { "website": null, "phone": null } },
+  { "providerName": "Yugo", "title": "Yugo Dubailand", "area": "Dubailand",
+    "roomTypes": [{ "type": "ensuite" }, { "type": "studio" }], "billsIncluded": [], "amenities": [], "houseRules": [], "womenOnly": false,
+    "contact": { "website": null, "phone": null } },
+  { "providerName": "Makaan", "title": "Makaan student accommodation", "area": "Area to confirm with the provider",
+    "roomTypes": [{ "type": "shared" }, { "type": "private" }], "billsIncluded": [], "amenities": [], "houseRules": [], "womenOnly": false,
+    "contact": { "website": null, "phone": null } }
+]

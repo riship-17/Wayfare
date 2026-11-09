@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Heriot-Watt University Dubai",
+    "slug": "heriot-watt-dubai",
+    "area": "Dubai Knowledge Park",
+    "emailDomainEnv": "HW_EMAIL_DOMAIN",
+    "website": "https://hw.ac.uk/dubai",
+    "locationFromStation": "tram-knowledge-village",
+    "nearestTransit": [
+      { "stationId": "metro-dubai-internet-city", "mode": "metro", "note": "Campus shuttle to Dubai Internet City metro station (Red Line). Confirm with the university." },
+      { "stationId": "tram-knowledge-village", "mode": "tram", "note": "Knowledge Village tram stop is within walking distance. Confirm with the university." }
+    ],
+    "source": { "label": "Heriot-Watt University, the Dubai campus", "url": "https://hw.ac.uk/dubai/campus/the-dubai-campus", "checkedOn": "2026-11-09" }
+  }
+]

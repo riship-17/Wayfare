@@ -1,0 +1,40 @@
+{
+  "name": "@wayfare/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --env-file-if-exists=../.env src/index.ts",
+    "start": "NODE_ENV=production tsx --env-file-if-exists=../.env src/index.ts",
+    "seed": "tsx --env-file-if-exists=../.env src/seed/seed.ts",
+    "import-transit": "tsx --env-file-if-exists=../.env scripts/import-transit.ts",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@wayfare/shared": "0.1.0",
+    "bcryptjs": "latest",
+    "cookie-parser": "latest",
+    "cors": "latest",
+    "express": "latest",
+    "express-rate-limit": "latest",
+    "helmet": "latest",
+    "jsonwebtoken": "latest",
+    "mongoose": "latest",
+    "pino": "latest",
+    "pino-http": "latest",
+    "tsx": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "latest",
+    "@types/cors": "latest",
+    "@types/express": "latest",
+    "@types/jsonwebtoken": "latest",
+    "@types/node": "latest",
+    "@types/supertest": "latest",
+    "pino-pretty": "latest",
+    "supertest": "latest",
+    "vitest": "latest"
+  }
+}

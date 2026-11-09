@@ -1,0 +1,65 @@
+[
+  {
+    "key": "mobile-sim", "order": 1, "icon": "sim", "title": "Mobile SIM", "dayZeroReady": true,
+    "summary": "Get a visitor or tourist line with your passport on Day Zero. Convert it once your Emirates ID arrives.",
+    "needs": ["passport", "entry_permit"],
+    "steps": ["Go to an e& or du counter at the airport or any of their shops.", "Ask for the e& Visitor Line or the du Tourist plan.", "Show your passport and entry permit.", "You can have at most two Visitor Line SIMs per passport.", "When your Emirates ID arrives, convert to a resident plan and keep your number."],
+    "bridge": null,
+    "links": [{ "label": "e&", "url": "https://www.etisalat.ae" }, { "label": "du", "url": "https://www.du.ae" }],
+    "source": { "label": "Gulf News, new to the UAE: SIM card options", "url": "https://gulfnews.com/living-in-uae/telephone-internet/new-to-the-uae--what-are-my-sim-card-options-1.1656337696506", "checkedOn": "2026-11-09" }
+  },
+  {
+    "key": "transport-card", "order": 2, "icon": "train", "title": "Transport card", "dayZeroReady": true,
+    "summary": "A Silver nol card works on metro, tram and bus from your first trip. The student card with 50% off comes after your Emirates ID.",
+    "needs": [],
+    "steps": ["Buy a Silver nol card at the Terminal 1 or Terminal 3 metro station.", "Fares are AED 3 for one zone, AED 5 for two zones and AED 7.50 for more than two.", "Once you have your Emirates ID, apply for the student nol card in the nol Pay app with your enrolment letter and a photo. Age limits apply."],
+    "bridge": "Use your Silver nol card until the student card arrives",
+    "links": [{ "label": "RTA", "url": "https://www.rta.ae" }],
+    "source": { "label": "Gulf News, how UAE students can save on public transport", "url": "https://gulfnews.com/living-in-uae/transport/how-uae-students-can-save-on-public-transport-discounts-passes-and-more-1.500039865", "checkedOn": "2026-11-09" }
+  },
+  {
+    "key": "emirates-id", "order": 3, "icon": "identification", "title": "Emirates ID and residence visa", "dayZeroReady": false,
+    "summary": "Your card is delivered only after your residence is issued. It is usually 1 to 3 weeks after you land. That is an estimate, not a promise.",
+    "needs": ["passport", "entry_permit"],
+    "steps": ["Entry permit issued by your university.", "Arrive in Dubai.", "Medical fitness test.", "Biometrics for the Emirates ID.", "Residence visa issued.", "Emirates ID card received. Processing after biometrics can take two days up to two weeks."],
+    "bridge": "Most of Day Zero works with your passport. Use the Day Zero ready services meanwhile.",
+    "links": [{ "label": "Track your application on the ICP site", "url": "https://icp.gov.ae/en/" }],
+    "source": { "label": "ICP, registration precedes the medical examination", "url": "https://icp.gov.ae/en/media-center/filling-out-registration-form-precedes-medical-examination-emirates-id/", "checkedOn": "2026-11-09" }
+  },
+  {
+    "key": "bank-account", "order": 4, "icon": "bank", "title": "Bank account", "dayZeroReady": false,
+    "summary": "A personal account needs a residence visa and Emirates ID. Most banks accept the Emirates ID application receipt once your visa is issued.",
+    "needs": ["residence_issued"],
+    "steps": ["Wait until your residence visa is issued.", "Ask the bank whether they accept your Emirates ID application receipt.", "Bring your passport, visa and receipt."],
+    "bridge": "Keep using your home card for now",
+    "links": [],
+    "source": { "label": "StashAway, complete guide to opening a bank account in the UAE", "url": "https://www.stashaway.ae/r/complete-guide-opening-bank-account-uae", "checkedOn": "2026-11-09" }
+  },
+  {
+    "key": "housing-ejari-dewa", "order": 5, "icon": "house", "title": "Housing, Ejari and DEWA", "dayZeroReady": false,
+    "summary": "Ejari registers your tenancy and needs your Emirates ID. DEWA connects electricity and water and needs your Ejari.",
+    "needs": ["emirates_id", "ejari"],
+    "steps": ["Check your contract to see who registers Ejari.", "Online through Dubai Land Department, Ejari costs AED 120 in government fees.", "Connect DEWA only if your contract says you pay utilities."],
+    "bridge": "Ask your provider how they handle your first weeks",
+    "links": [{ "label": "Dubai Land Department", "url": "https://dubailand.gov.ae/en/" }, { "label": "DEWA", "url": "https://www.dewa.gov.ae" }, { "label": "Ejari fees, wasl", "url": "https://www.wasl.ae/en/node/632" }],
+    "source": { "label": "Bayut, Ejari FAQs", "url": "https://www.bayut.com/mybayut/ejari-faqs/", "checkedOn": "2026-11-09" }
+  },
+  {
+    "key": "medical-insurance", "order": 6, "icon": "first-aid", "title": "Medical test and health insurance", "dayZeroReady": false,
+    "summary": "Your university guides you through the medical fitness test for your visa and tells you which health insurance you need.",
+    "needs": ["entry_permit"],
+    "steps": ["Ask your university's visa office for your medical test appointment.", "Ask what health insurance your visa needs and whether the university provides it."],
+    "bridge": "Your university's visa office is your first contact",
+    "links": [{ "label": "ICP", "url": "https://icp.gov.ae/en/" }],
+    "source": { "label": "ICP, registration precedes the medical examination", "url": "https://icp.gov.ae/en/media-center/filling-out-registration-form-precedes-medical-examination-emirates-id/", "checkedOn": "2026-11-09" }
+  },
+  {
+    "key": "emergency-numbers", "order": 7, "icon": "phone", "title": "Emergency numbers", "dayZeroReady": true,
+    "summary": "Police 999. Ambulance 998. Fire 997. Save them now.",
+    "needs": [],
+    "steps": ["Police: 999.", "Ambulance: 998.", "Fire: 997.", "Save them in your phone before you fly."],
+    "bridge": null,
+    "links": [{ "label": "UAE government portal", "url": "https://u.ae" }],
+    "source": { "label": "UAE government portal, emergency numbers", "url": "https://u.ae", "checkedOn": "2026-11-09" }
+  }
+]

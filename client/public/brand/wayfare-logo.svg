@@ -1,0 +1,5 @@
+<!-- Pin + wordmark. Text uses Poppins 700: load Poppins or outline the text before using this file outside the app. In React, build the lockup as <WayfarePin/> + a Poppins Bold span instead of using this file. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196 40" role="img" aria-label="Wayfare">
+  <path fill="#050505" fill-rule="evenodd" transform="translate(0 4)" d="M12 0C5.373 0 0 5.373 0 12c0 7.2 8.4 15.6 11.2 19.6a1 1 0 0 0 1.6 0C15.6 27.6 24 19.2 24 12 24 5.373 18.627 0 12 0Zm0 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Z"/>
+  <text x="34" y="29" font-family="Poppins, sans-serif" font-weight="700" font-size="30" fill="#050505" letter-spacing="-0.5">Wayfare</text>
+</svg>

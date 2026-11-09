@@ -1,0 +1,172 @@
+[
+  {
+    "key": "choose-housing", "phase": "before_arrival", "order": 1,
+    "title": "Choose a verified place to live",
+    "summary": "A place your university has checked means no deposit lost to a broker you cannot find later.",
+    "steps": ["Open Housing and look for the verified badge.", "Compare the price, the walk to the metro or tram, and the distance to campus.", "Request a viewing or a video call before you pay anything.", "Read the contract before you pay a deposit."],
+    "requires": ["passport"], "where": "Online, before you fly",
+    "officialLinks": [{ "label": "Check a broker's licence, Dubai Land Department", "url": "https://dubailand.gov.ae/en/" }],
+    "costItemKeys": ["rent", "deposit"]
+  },
+  {
+    "key": "confirm-entry-permit", "phase": "before_arrival", "order": 2,
+    "title": "Confirm your entry permit with your university",
+    "summary": "Your university sponsors your student visa. The entry permit is what lets you land and start the residence process.",
+    "steps": ["Ask your admissions or visa office when your entry permit will be issued.", "Check that the name on the permit matches your passport exactly.", "Keep a copy on your phone and a printed copy in your hand luggage."],
+    "requires": [], "where": "Your university's visa office",
+    "officialLinks": [{ "label": "Federal Authority for Identity, Citizenship, Customs and Port Security (ICP)", "url": "https://icp.gov.ae/en/" }]
+  },
+  {
+    "key": "documents-ready", "phase": "before_arrival", "order": 3,
+    "title": "Get your documents ready",
+    "summary": "Passport validity, your offer letter, your entry permit and photos. Most of Day Zero runs on these.",
+    "steps": ["Check your passport is valid well beyond your course start. Ask your university for the exact rule.", "Save your offer or enrolment letter as a PDF on your phone.", "Bring passport photos. Your university tells you the size and number.", "Keep paper copies of everything in your hand luggage."],
+    "requires": [], "where": "At home",
+    "officialLinks": []
+  },
+  {
+    "key": "plan-budget", "phase": "before_arrival", "order": 4,
+    "title": "Plan your first month budget",
+    "summary": "See what you pay before you fly, in your first month and every month, in your home currency.",
+    "steps": ["Open Budget.", "Add the numbers from your offer letter and your housing quote.", "Share a read only link with your family if they help you pay."],
+    "requires": [], "where": "In Wayfare",
+    "officialLinks": []
+  },
+  {
+    "key": "save-transit-offline", "phase": "before_arrival", "order": 5,
+    "title": "Save the transit map for offline",
+    "summary": "Your phone may not have data when you land. The map and routes work without it.",
+    "steps": ["Open Transit once while you have a connection.", "Check that it says Saved for offline.", "Try the Airport to campus route so it is ready."],
+    "requires": [], "where": "In Wayfare",
+    "officialLinks": [{ "label": "RTA, Dubai Metro and Tram", "url": "https://www.rta.ae" }]
+  },
+  {
+    "key": "plan-airport-to-campus", "phase": "before_arrival", "order": 6,
+    "title": "Plan airport to campus",
+    "summary": "The Red Line stops at Terminal 1 and Terminal 3. Terminal 2 has no metro station.",
+    "steps": ["Check which terminal your flight lands at.", "If it is Terminal 1 or 3, plan the metro route in Transit.", "If it is Terminal 2, plan a taxi or ask your university about pick up.", "Note the last metro time for your arrival day on the RTA site."],
+    "requires": [], "where": "In Wayfare",
+    "officialLinks": [{ "label": "RTA journey planner", "url": "https://www.rta.ae" }]
+  },
+  {
+    "key": "visitor-sim", "phase": "arrival", "order": 1,
+    "title": "Get a visitor SIM at the airport",
+    "summary": "While your residence is in process you can get a visitor or tourist line with your passport and convert it once your Emirates ID arrives.",
+    "steps": ["Bring your passport and entry permit.", "Ask e& for the Visitor Line or du for the Tourist plan.", "There is a maximum of two Visitor Line SIMs per passport.", "Keep the receipt. You convert the line once your Emirates ID arrives."],
+    "requires": ["passport", "entry_permit"], "where": "Telecom counters at the airport, or any e& or du shop",
+    "officialLinks": [{ "label": "e&", "url": "https://www.etisalat.ae" }, { "label": "du", "url": "https://www.du.ae" }],
+    "costItemKeys": ["visitor-sim"]
+  },
+  {
+    "key": "silver-nol", "phase": "arrival", "order": 2,
+    "title": "Buy a Silver nol card at the airport metro station",
+    "summary": "One card for metro, tram and bus. Fares go by zones crossed.",
+    "steps": ["Go to the metro station at Terminal 1 or Terminal 3.", "Buy a Silver nol card at the ticket office or machine.", "Top it up with enough for your first week."],
+    "requires": [], "where": "Airport Terminal 1 or Terminal 3 metro station",
+    "costNote": "Silver nol fares are AED 3, 5 or 7.50 a trip by zones",
+    "officialLinks": [{ "label": "RTA nol cards and fares", "url": "https://www.rta.ae" }],
+    "costItemKeys": ["metro-trip"]
+  },
+  {
+    "key": "get-to-residence", "phase": "arrival", "order": 3,
+    "title": "Get to your residence",
+    "summary": "Follow your saved route. It works offline.",
+    "steps": ["Open Transit and choose Airport to campus, or search for your residence's nearest station.", "Message your housing provider when you leave the airport.", "Check in and keep your contract somewhere safe."],
+    "requires": [], "where": "From the airport",
+    "officialLinks": []
+  },
+  {
+    "key": "medical-test", "phase": "arrival", "order": 4,
+    "title": "Do your medical fitness test",
+    "summary": "Part of your residence visa. Your university books it or tells you where to go.",
+    "steps": ["Ask your university's visa office for your appointment.", "Bring your passport, entry permit and photos.", "Keep the receipt."],
+    "requires": ["entry_permit"], "where": "A government health centre your university names",
+    "officialLinks": [{ "label": "ICP, registration comes before the medical test", "url": "https://icp.gov.ae/en/media-center/filling-out-registration-form-precedes-medical-examination-emirates-id/" }]
+  },
+  {
+    "key": "biometrics", "phase": "arrival", "order": 5,
+    "title": "Register your biometrics for the Emirates ID",
+    "summary": "Fingerprints and a photo for your Emirates ID. The card comes after your residence is issued.",
+    "steps": ["Your university or ICP tells you when and where.", "Bring your passport and application receipt.", "After this, processing can take two days up to two weeks."],
+    "requires": ["entry_permit"], "where": "An ICP service centre",
+    "officialLinks": [{ "label": "ICP", "url": "https://icp.gov.ae/en/" }]
+  },
+  {
+    "key": "student-services", "phase": "arrival", "order": 6,
+    "title": "Visit student services on campus",
+    "summary": "Pick up your student card and ask what your university can do while your Emirates ID is on the way.",
+    "steps": ["Bring your enrolment letter and passport.", "Ask about orientation, the campus shuttle and student support.", "Ask for a letter for your bank if you need one."],
+    "requires": ["enrolment_letter"], "where": "Your campus",
+    "officialLinks": []
+  },
+  {
+    "key": "bank-account", "phase": "initial_settlement", "order": 1,
+    "title": "Open a bank account",
+    "summary": "Many banks accept the Emirates ID application receipt once your visa is issued. Ask your bank first.",
+    "steps": ["Wait until your residence visa is issued.", "Ask your chosen bank if they accept the Emirates ID application receipt.", "Bring your passport, visa, receipt and a letter from your university if they ask."],
+    "requires": ["residence_issued"], "bridge": "Keep using your home card for now",
+    "where": "A bank branch or its app",
+    "officialLinks": [{ "label": "Guide: opening a bank account in the UAE", "url": "https://www.stashaway.ae/r/complete-guide-opening-bank-account-uae" }]
+  },
+  {
+    "key": "register-ejari", "phase": "initial_settlement", "order": 2,
+    "title": "Register your tenancy (Ejari) if you rent privately",
+    "summary": "Ejari cannot be registered without your Emirates ID. University residences often handle this differently.",
+    "steps": ["Wait for your Emirates ID.", "Ask your landlord or provider who registers the Ejari.", "Online through Dubai Land Department it costs AED 120 in government fees."],
+    "requires": ["emirates_id"], "bridge": "Ask your provider how they handle your first weeks",
+    "where": "Online through Dubai Land Department, or a typing centre",
+    "costNote": "AED 120 in government fees online",
+    "officialLinks": [{ "label": "Dubai Land Department", "url": "https://dubailand.gov.ae/en/" }, { "label": "Ejari fees, wasl", "url": "https://www.wasl.ae/en/node/632" }],
+    "costItemKeys": ["ejari"]
+  },
+  {
+    "key": "dewa", "phase": "initial_settlement", "order": 3,
+    "title": "Connect DEWA utilities if your contract needs it",
+    "summary": "Electricity and water. Only if your contract says you pay them. DEWA needs your Ejari.",
+    "steps": ["Check your contract. Many student places include bills.", "Register online with DEWA using your Ejari number."],
+    "requires": ["ejari"], "where": "Online with DEWA",
+    "officialLinks": [{ "label": "DEWA", "url": "https://www.dewa.gov.ae" }]
+  },
+  {
+    "key": "resident-sim", "phase": "initial_settlement", "order": 4,
+    "title": "Move to a resident SIM plan",
+    "summary": "Residents need an Emirates ID for regular lines. You can convert your visitor line.",
+    "steps": ["Take your Emirates ID to an e& or du shop.", "Ask to convert your visitor line so you keep your number."],
+    "requires": ["emirates_id"], "bridge": "Your visitor line works meanwhile",
+    "where": "An e& or du shop",
+    "officialLinks": [{ "label": "e&", "url": "https://www.etisalat.ae" }, { "label": "du", "url": "https://www.du.ae" }]
+  },
+  {
+    "key": "student-nol", "phase": "initial_settlement", "order": 5,
+    "title": "Apply for the student nol card (50% off)",
+    "summary": "Half price on RTA bus, metro and tram. You need a valid Emirates ID. Age limits apply.",
+    "steps": ["Open the nol Pay app.", "Apply with your enrolment letter, a photo and your Emirates ID.", "Check the age limit on the RTA site before you apply."],
+    "requires": ["emirates_id", "enrolment_letter"], "bridge": "Use your Silver nol card",
+    "where": "The nol Pay app",
+    "officialLinks": [{ "label": "RTA", "url": "https://www.rta.ae" }]
+  },
+  {
+    "key": "join-community", "phase": "adjustment", "order": 1,
+    "title": "Join your university community",
+    "summary": "Verified groups for your university and your home country. Announcements and events, no strangers in your messages.",
+    "steps": ["Open Community from Home.", "Join your university group with your university email.", "RSVP to one event this month."],
+    "requires": [], "where": "In Wayfare",
+    "officialLinks": []
+  },
+  {
+    "key": "wellbeing-support", "phase": "adjustment", "order": 2,
+    "title": "Find study and wellbeing support on campus",
+    "summary": "Every university has people whose job is to help you settle. Find them before you need them.",
+    "steps": ["Ask student services where study skills and wellbeing support are.", "Save their contact details in your phone."],
+    "requires": [], "where": "Your campus",
+    "officialLinks": []
+  },
+  {
+    "key": "explore-city", "phase": "adjustment", "order": 3,
+    "title": "Explore the city by metro and tram",
+    "summary": "Transit first is cheaper and you learn the city faster.",
+    "steps": ["Pick one place on the Red Line and one on the tram.", "Plan the route in Transit and go on a weekend."],
+    "requires": [], "where": "Anywhere on the network",
+    "officialLinks": [{ "label": "RTA", "url": "https://www.rta.ae" }]
+  }
+]

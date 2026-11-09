@@ -1,0 +1,68 @@
+/*
+  Wayfare design tokens (Tailwind CSS v4, CSS-first config)
+  Source of truth: reference/wayfare-brand-guidelines.png
+  Copy into client/src/styles/tokens.css and import it once from client/src/index.css
+  right after `@import "tailwindcss";`
+*/
+
+@theme {
+  /* ---------- Colour (brand sheet, section 03) ---------- */
+  --color-navy: #25265e;        /* text, logo, outlines, dark panels */
+  --color-navy-muted: #626086;  /* secondary text on cream only. 5.5:1 on cream */
+  --color-sunshine: #fec93b;    /* Prepare stage, highlights, CTA on navy */
+  --color-lilac: #c8b7ee;       /* Arrive stage, accommodation */
+  --color-blush: #f4b5c8;       /* Settle stage, community */
+  --color-sage: #a6d6b0;        /* verified, success, insights */
+  --color-cream: #fef5ec;       /* page background */
+  --color-white: #ffffff;       /* cards */
+
+  /* Journey stage aliases (brand sheet, section 07) */
+  --color-stage-prepare: var(--color-sunshine);
+  --color-stage-arrive: var(--color-lilac);
+  --color-stage-settle: var(--color-blush);
+  --color-verified: var(--color-sage);
+
+  /* ---------- Type (brand sheet, section 04) ---------- */
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+
+  /* ---------- Shape (brand sheet, section 06) ---------- */
+  /* Cards use rounded-3xl (24px). Buttons and chips use rounded-full. */
+  --radius-card: 1.5rem;
+
+  /* ---------- Motion (ai-design-skills B7) ---------- */
+  --ease-wayfare: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* White cards carry a 2.5px navy outline. Coloured cards carry no outline. */
+@utility card-outline {
+  border: 2.5px solid var(--color-navy);
+}
+
+/* ---------- Named text styles (Tailwind scale steps only) ----------
+   Prefixed type-* (not text-*) so tailwind-merge / shadcn cn() never treats them as
+   colour or size classes and drops text-navy etc. */
+/* Headlines Bold 700, labels SemiBold 600, body Regular 400 (brand sheet). */
+@utility type-display   { font-size: var(--text-4xl); line-height: var(--text-4xl--line-height); font-weight: 700; text-wrap: balance; }
+@utility type-heading-1 { font-size: var(--text-3xl); line-height: var(--text-3xl--line-height); font-weight: 700; text-wrap: balance; }
+@utility type-heading-2 { font-size: var(--text-2xl); line-height: var(--text-2xl--line-height); font-weight: 700; text-wrap: balance; }
+@utility type-heading-3 { font-size: var(--text-xl);  line-height: var(--text-xl--line-height);  font-weight: 600; text-wrap: balance; }
+@utility type-title     { font-size: var(--text-base); line-height: var(--text-base--line-height); font-weight: 600; }
+@utility type-body      { font-size: var(--text-base); line-height: var(--text-base--line-height); font-weight: 400; text-wrap: pretty; }
+@utility type-body-sm   { font-size: var(--text-sm);  line-height: var(--text-sm--line-height);  font-weight: 400; text-wrap: pretty; }
+@utility type-label     { font-size: var(--text-sm);  line-height: var(--text-sm--line-height);  font-weight: 600; }
+@utility type-caption   { font-size: var(--text-xs);  line-height: var(--text-xs--line-height);  font-weight: 400; }
+@utility type-overline  { font-size: var(--text-xs);  line-height: var(--text-xs--line-height);  font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; }
+@utility type-button    { font-size: var(--text-base); line-height: var(--text-base--line-height); font-weight: 600; }
+@utility type-button-sm { font-size: var(--text-sm);  line-height: var(--text-sm--line-height);  font-weight: 600; }
+
+/* Landing page only (desktop). Brand H1 56 snaps to 48, H2 32 snaps to 30. */
+@utility type-hero      { font-size: var(--text-5xl); line-height: var(--text-5xl--line-height); font-weight: 700; text-wrap: balance; }
+
+@layer base {
+  html { background: var(--color-cream); color: var(--color-navy); font-family: var(--font-sans); }
+  ::selection { background: var(--color-sunshine); color: var(--color-navy); }
+  /* Visible focus ring that follows each element's own radius. On navy surfaces use outline-sunshine. */
+  :focus-visible { outline: 3px solid var(--color-navy); outline-offset: 2px; }
+  /* Reduced motion is handled per component (motion's useReducedMotion and the SSGOI config):
+     movement is swapped for a plain opacity change, never removed silently. */
+}

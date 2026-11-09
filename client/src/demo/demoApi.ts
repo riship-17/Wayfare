@@ -45,8 +45,9 @@ import ratesSnapshot from './rates.json';
 import { RequestError } from '../lib/api';
 
 const NET = network as unknown as TransitNetwork;
-const KEY = 'wf-static-demo-v1';
-const INST_ID = 'hw-dubai';
+const KEY = 'wf-static-demo-v2';
+// Ids look like MongoDB ObjectIds because the shared Zod schemas validate them.
+const INST_ID = '6a1000000000000000000001';
 const STUDENT_ID = 'demo-student';
 const ADMIN_ID = 'demo-admin';
 const LISTING_SOURCE = { label: 'Go Study In, Heriot-Watt Dubai accommodation (third party study guide). The university must confirm.', url: 'https://gostudyin.com/uk/study-in-dubai/institutes/universities/heriot-watt-dubai/', checkedOn: '2026-11-09' };
@@ -85,7 +86,7 @@ function fresh(): State {
     },
     tasks: {},
     budgets: {},
-    listings: (listingsSeed as unknown as DemoListing[]).map((l, i) => ({ ...l, id: `listing-${i + 1}`, roomTypes: l.roomTypes.map((r) => ({ type: r.type, priceAedMonthly: null, depositAed: null })), transit: null, campusDistanceKm: null, verification: { status: 'pending', verifiedAt: null, sourceUrl: null, checkedOn: null, notes: null } })),
+    listings: (listingsSeed as unknown as DemoListing[]).map((l, i) => ({ ...l, id: `6b10000000000000000000${String(i + 1).padStart(2, '0')}`, roomTypes: l.roomTypes.map((r) => ({ type: r.type, priceAedMonthly: null, depositAed: null })), transit: null, campusDistanceKm: null, verification: { status: 'pending', verifiedAt: null, sourceUrl: null, checkedOn: null, notes: null } })),
     overrides: {},
     events: [],
     groups: [

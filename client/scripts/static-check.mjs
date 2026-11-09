@@ -24,6 +24,14 @@ await p.goto(BASE + '/app/transit'); await p.getByTestId('preset-airport').click
 await p.goto(BASE + '/app/budget'); await see('Rates on'); console.log('ok  budget with rate snapshot');
 await p.goto(BASE + '/app/me'); await p.getByRole('button', { name: 'Arrive today' }).click(); await p.waitForTimeout(500);
 await p.getByRole('button', { name: 'Emirates ID received' }).click(); await see(/tasks? (is|are) ready/); console.log('ok  Emirates ID unlock toast');
+// New account through set up (uses the university and listing ids)
+const c2 = await b.newContext({ viewport: { width: 390, height: 844 } }); const q = await c2.newPage();
+q.on('pageerror', (e) => errs.push(e.message));
+await q.goto(BASE + '/app/create'); await q.getByLabel('First name').fill('Omar'); await q.getByLabel('Email').fill('omar@example.com'); await q.getByLabel('Password').fill('longenough1');
+await q.getByRole('button', { name: 'Create account' }).click(); await q.waitForURL(/setup\/university/); await q.waitForTimeout(700);
+await q.getByText('Heriot-Watt University Dubai').last().click(); await q.getByRole('button', { name: 'Continue' }).last().click();
+await q.waitForURL(/setup\/arrival/); console.log('ok  new student passes the university step');
+await c2.close();
 await p.goto(BASE + '/'); await see('42,026 students now study in Dubai.'); console.log('ok  landing page');
 console.log('API requests that left the browser:', api.length, '| page errors:', errs.length ? errs : 'none');
 await b.close();
